@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="./style.css">
+    <title>Dashboard</title>
+</head>
+<body>
+    <nav class="menu shadow-sm bg-cinza-claro rounded">
+		<ul class="nav nav-justified">
+			<li id="Teams" class="nav-item active"><a class="nav-link">Controlador</a></li>
+			<li id="Match" class="nav-item "><a class="nav-link">Rotinas</a></li>
+		</ul>
+	</nav>
+
+    <div id="Controlador" class="container-fluid ">
+        <div class="row justify-content-center">
+
+            <div id="Quarto1" class="card">
+                <img src="./img/turn-on.svg">
+                <p>Quarto 1</p>
+            </div>
+            <div id="Quarto2" class="card">
+                <img src="./img/turn-on.svg">
+                <p>Sala</p>
+            </div>
+            <div id="Quarto3" class="card">
+                <img src="./img/turn-on.svg">
+                <p>Cortina Quarto 1</p>
+            </div>
+            <div id="Quarto4" class="card">
+                <img src="./img/turn-on.svg">
+                <p>Cafeteira</p>
+            </div>
+            <div id="Quarto5" class="card">
+                <img src="./img/turn-on.svg">
+                <p>Banheiro</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="GuiaRotinas"  class="container-fluid hide">
+        <div id="rotinas" class="row justify-content-center">
+        </div>
+        <div id="programarRotina" class="container-fluid hide">
+            <section id="hora" class="row justify-content-center">
+                <div class="input-group-prepend">
+                    <label class="input-group-text" for="validatedInputGroupSelect">Hora para início</label>
+                  </div>
+                <input class="time" id="timepicker" type="time">
+            </section>
+            <!-- <div id="r0" class="row justify-content-center">
+                <div class="mb-4">
+                    <div class="input-group is-invalid">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="validatedInputGroupSelect">Alterar Estado</label>
+                      </div>
+                      <select class="custom-select" id="validatedInputGroupSelect" required>
+                        <option value="">Selecione o Dispositivo</option>
+                        <option value="luzquarto">Quarto 1</option>
+                        <option value="luzsala">Sala</option>
+                        <option value="cortina">Cortina Quarto 1</option>
+                        <option value="cafeteira">Cafeteira</option>
+                        <option value="banheiro">Banheiro</option>
+                      </select>
+                      <select class="custom-select" id="validatedInputGroupSelect" required>
+                        <option value="">Selecione o Estado</option>
+                        <option value="0">Ligado</option>
+                        <option value="1">Desligado</option>
+                      </select>
+                      <button id="rem-r0" style="margin-right: 10px;" type="button" class="btn btn-secondary">X</button>
+                    </div>
+                    <div class="invalid-feedback">
+                      Example invalid input group feedback
+                    </div>
+                  </div>
+            </div> -->
+            <!-- <div id="r0" class="row justify-content-center">
+                <div class="mb-4">
+                    <div class="input-group is-invalid">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="validatedInputGroupSelect">Delay</label>
+                      </div>
+                      <input style="text-align: right;" type="text" class="form-control" placeholder="Tempo (ms)">
+                      <div class="input-group-prepend">
+                        <label class="input-group-text" for="validatedInputGroupSelect">ms</label>
+                      </div>
+                      <button id="rem-r0" style="margin-right: 10px;" type="button" class="btn btn-secondary">X</button>
+                    </div>
+                  </div>
+            </div> -->
+        </div>
+        <div id="AddsRotinas" class="container-fluid hide">
+            <div class="row justify-content-center">
+                <button id="AddAlterarEstado" style="margin-right: 10px;" type="button" class="btn btn-secondary">Adicionar Alterar Estado</button>
+                <button id="AddDelay" type="button" class="btn btn-secondary">Adicionar Delay</button>
+            </div>
+            <h1></h1>
+            <div class="row justify-content-center">
+                <input type="hidden" id="idRotina">
+                <button id="Excluir" onclick="excluirRotina()" style="margin-right: 10px;" type="button" class="btn btn-danger">Excluir</button>
+                <button id="Cancelar" onclick="cancelarRotina()" style="margin-right: 10px;" type="button" class="btn btn-danger">Cancelar</button>
+                <button id="Salvar" type="button" class="btn btn-success">Salvar</button>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./script.js"></script>
+    <script src="./js/notify.js"></script>
+</body>
+</html>

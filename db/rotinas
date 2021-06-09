@@ -1,0 +1,3 @@
+{"name":"","hora":"15:13","passos":[["Alterar Estado","ledquarto","0"],["Alterar Estado","cafeteira","0"],["Delay",2000],["Alterar Estado","ledquarto","1"]],"_id":"Om3bwWlLJV60TPwQ"}
+{"name":"","hora":"20:55","passos":[["Alterar Estado","ledquarto","0"],["Alterar Estado","cortina","0"],["Delay",5000],["Alterar Estado","cortina","1"]],"_id":"fJjd2w42WkYZhBmu"}
+{"name":"","hora":"20:24","passos":[["Alterar Estado","ledquarto","0"],["Delay",10000],["Alterar Estado","ledsala","0"],["Delay",30000],["Alterar Estado","ledquarto","1"]],"_id":"wW339POSpNxqgv1h"}
